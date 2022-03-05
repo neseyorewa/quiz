@@ -89,19 +89,19 @@ public class MainActivity extends AppCompatActivity {
                 // randomNumを使って、quizArrayからクイズを一つ取り出す
                 ArrayList<String> quiz = quizArray.get(randomNum);
 
-                // 問題文（都道府県名）を表示
+                // 問題文を表示
                 question.setText(quiz.get(0));
 
                 // 正解をrightAnswerにセット
                 rightAnswer = quiz.get(1);
 
-                // クイズ配列から問題文（都道府県名）を削除
+                // クイズ配列から問題文を削除
                 quiz.remove(0);
 
-                // 正解と選択肢３つをシャッフル
+                // 正解と選択肢をシャッフル
                 Collections.shuffle(quiz);
 
-                // 回答ボタンに正解と選択肢３つを表示
+                // 回答ボタンに正解と選択肢を表示
                 answer1.setText(quiz.get(0));
                 answer2.setText(quiz.get(1));
                 answer3.setText(quiz.get(2));
